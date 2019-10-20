@@ -1,0 +1,45 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h1{
+      margin: auto;
+  }
+  body {
+    background:radial-gradient(#5479a3, #fff) fixed;
+    font-family: 'Righteous', sans-serif;
+  
+  }
+section{
+    text-align: center;
+
+}
+  div {
+    width: 25%;
+    float: left;
+    padding: 25px;
+  }
+
+  section div img {
+    max-width: 80%;
+    height: 200px;
+    border: 10px solid rgb(107, 93, 172);
+    border-radius: 5%;
+  }
+
+  table {
+    border-collapse: collapse;
+    
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 3px 10px;
+  }
+  #element1{
+      padding-left: 40px;
+  }
+
+ 
