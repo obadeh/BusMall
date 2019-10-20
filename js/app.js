@@ -140,7 +140,7 @@ function updateTotals() {
       addElement('td', row, product.title);
       addElement('td', row, '' + product.clickCtr);
       addElement('td', row, '' + product.shownCtr);
-      addElement('td', row,''+ prc );
+      addElement('td', row,''+ prc +'%');
     }
   }
 
