@@ -132,7 +132,7 @@ function updateTotals() {
   
     for (var i = 0; i < Product.all.length; i++) {
       var product = Product.all[i];
-      var prc=(product.clickCtr/product.shownCtr)*100;
+      var prc=((product.clickCtr/product.shownCtr)*100).toFixed(1);
       if (isNaN(prc)){
           prc=0;
       }
