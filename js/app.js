@@ -71,7 +71,7 @@ function renderNewProduct() {
 
 // mid product also ..
 
-forbidden.push(Product.midObject);
+forbidden.push(Product.leftObject);
 
 do{
 
@@ -82,7 +82,7 @@ do{
 
 
  // add left product to forbidden list so we don't double up
- forbidden.push(Product.rightObject);
+ forbidden.push(Product.midObject);
 
  do {
 
