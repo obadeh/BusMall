@@ -140,7 +140,8 @@ function updateTotals() {
       addElement('td', row, product.title);
       addElement('td', row, '' + product.clickCtr);
       addElement('td', row, '' + product.shownCtr);
-      addElement('td', row,''+ prc +'%');
+      // addElement('td', row,''+ prc +'%');
+      addElement('td', row,''+ product.title +'  had '+product.clickCtr+' votes and was shown '+  product.shownCtr+' times');
     }
   }
 
@@ -242,6 +243,8 @@ function numberShown(){
 
 
 function renderChart(){
+
+  
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
