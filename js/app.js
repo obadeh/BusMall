@@ -137,10 +137,8 @@ function updateTotals() {
           prc=0;
       }
       var row = addElement('tr', tableBody);
-      addElement('td', row, product.title);
-      addElement('td', row, '' + product.clickCtr);
-      addElement('td', row, '' + product.shownCtr);
-      addElement('td', row,''+ prc +'%');
+     
+      addElement('td', row,''+product.title +'  had '+product.clickCtr+' votes and was shown '+  product.shownCtr+' times');
     }
   }
 
