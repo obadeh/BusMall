@@ -19,7 +19,7 @@ section{
   div {
     width: 25%;
     float: left;
-    padding: 25px;
+    
   }
 
   section div img {
@@ -38,8 +38,9 @@ section{
     border: 1px solid black;
     padding: 3px 10px;
   }
-  #element1{
-      padding-left: 40px;
-  }
+  /* /* #element1{
+      padding-left: 30px; */
+  /* } 
 
+ 
  
