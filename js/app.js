@@ -180,7 +180,7 @@ function updateTotals() {
         pruductClicked.clickCtr++;
       Product.roundCtr++;
   
-      updateTotals();
+      // updateTotals();
   
       if(Product.roundCtr === Product.roundLimit) {
         
@@ -188,7 +188,8 @@ function updateTotals() {
         renderChart();
   
         Product.container.removeEventListener('click', clickHandler);
-  
+        updateTotals();
+
       } else {
   
         renderNewProduct();
@@ -200,7 +201,6 @@ function updateTotals() {
 // but event.target will allow us to which child element was actually clicked
 Product.container.addEventListener('click', clickHandler);
 
-updateTotals();
 
 renderNewProduct();
 
