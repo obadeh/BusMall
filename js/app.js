@@ -166,7 +166,7 @@ function clickHandler(event) {
     pruductClicked.clickCtr++;
     Product.roundCtr++;
 
-    updateTotals();
+    // updateTotals();
 
     if (Product.roundCtr === Product.roundLimit) {
 
@@ -175,6 +175,7 @@ function clickHandler(event) {
       localStorage.setItem('setProducts', JSON.stringify(Product.all));
 
       Product.container.removeEventListener('click', clickHandler);
+      updateTotals();
 
     } else {
 
@@ -191,7 +192,6 @@ Product.container.addEventListener('click', clickHandler);
 
 checkStorage();
 
-updateTotals();
 
 
 renderNewProduct();
