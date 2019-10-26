@@ -25,7 +25,7 @@ section{
   section div img {
     max-width: 80%;
     height: 200px;
-    border: 10px solid rgb(107, 93, 172);
+    border: 10px solid rgb(195, 189, 221);
     border-radius: 5%;
   }
 
@@ -37,6 +37,33 @@ section{
   table, th, td {
     border: 1px solid black;
     padding: 3px 10px;
+    background-color: aliceblue;
+  }
+  tbody{
+    background-color: aliceblue;
+
+  }
+  #clearM{
+    
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #986b59;
+      padding: 8px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      transition: all 0.4s ease 0s;
+      
+  }
+
+  #clearM :hover  {
+    background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
   }
   /* /* #element1{
       padding-left: 30px; */

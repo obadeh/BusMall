@@ -172,10 +172,10 @@ function clickHandler(event) {
 
       alert('No more clicking for you!');
       renderChart();
-      localStorage.setItem('setProducts', JSON.stringify(Product.all));
-
+      
       Product.container.removeEventListener('click', clickHandler);
       updateTotals();
+      localStorage.setItem('setProducts', JSON.stringify(Product.all));
 
     } else {
 
@@ -207,6 +207,9 @@ function checkStorage() {
   if (localStorage.setProducts) {
     var stringifyProducts = localStorage.getItem('setProducts');
     Product.all = JSON.parse(stringifyProducts);
+
+
+    
   }
 }
 
